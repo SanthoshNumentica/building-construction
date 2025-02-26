@@ -470,10 +470,11 @@
     transition: 0.5s;
 }
 .feature .feature-item:hover {
-    background: var(--bs-white);
+    background: #84DE02; /* Corrected color format */
     border: 1px solid transparent;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
 }
+
 
 .feature .feature-item:hover a {
     transition: 0.5s;
@@ -492,7 +493,6 @@
     border: 1px solid var(--bs-secondary);
 }  
 /*** Features End ***/
-
 /*** Services Start ***/
 .service .service-item {
     position: relative;
@@ -503,14 +503,17 @@
     z-index: 1;
 }
 
+/* Blur image on hover */
 .service .service-item .service-img img {
     transition: 0.5s;
 }
 
 .service .service-item:hover .service-img img {
     transform: scale(1.2);
+    filter: blur(5px); /* Blur effect */
 }
 
+/* Background overlay on hover */
 .service .service-item::after {
     content: "";
     width: 100%;
@@ -518,47 +521,59 @@
     position: absolute;
     top: 0;
     left: 0;
+    background: rgba(0, 191, 255, 0.3); /* Light overlay with Primary Theme Color */
     transition: 0.5s;
     z-index: 2;
 }
 
-.service .service-item:hover:after {
+.service .service-item:hover::after {
     height: 100%;
-    background: rgba(0, 0, 0, .4);
 }
 
+/* Service content */
 .service .service-item .service-content {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 50%; 
-    left: 0; 
+    top: 50%;
+    left: 0;
     transform: translateY(-50%);
     transition: 0.5s;
     opacity: 0;
     z-index: 3;
+    text-align: center;
+    font-weight: bold; /* Make content bold */
 }
 
+/* Show content on hover */
 .service .service-item:hover .service-content {
     opacity: 1;
 }
 
-.service .service-item:hover .service-content a.fs-4 {
-    color: var(--bs-white);
+/* Service Titles */
+.service .service-item .service-content a.fs-4 {
+    color: white;
+    font-weight: bold; /* Bold text */
     transition: 0.5s;
 }
 
 .service .service-item:hover .service-content a.fs-4:hover {
-    color: var(--bs-secondary);
+    color: #636b7d03; /* Theme Primary Color */
 }
 
+/* Icon Colors */
+.service-content i {
+    color: #00BFFF !important;
+}
+
+/* Service Title Background */
 .service .service-item .service-tytle {
     position: absolute;
     width: 100%;
-    height: 80px; 
-    bottom: 0; 
+    height: 80px;
+    bottom: 0;
     right: 0;
-    background: var(--bs-white);
+    background: #84DE02; /* Theme Secondary Color */
     display: flex;
     transition: 0.5s;
     z-index: 3;
@@ -567,6 +582,24 @@
 .service .service-item:hover .service-tytle {
     margin-right: -100%;
 }
+
+/* Buttons */
+.service-content .btn-secondary {
+    background-color: #84DE02 !important;
+    border-color: #84DE02 !important;
+    color: white !important;
+}
+
+.service-content .btn-secondary:hover {
+    background-color: #6ABB01 !important;
+    border-color: #6ABB01 !important;
+}
+
+/* Background Changes */
+.service.bg-light {
+    background-color: #F0F8FF; /* Lightened version for theme consistency */
+}
+
 /*** Services End ***/
 
 /*** Fact Counter ***/
@@ -948,5 +981,22 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+
+.btn-custom {
+    background: linear-gradient(45deg, #00BFFF, #84DE02);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #84DE02, #00BFFF);
+    color: white;
+}
+.image-border {
+    border: 5px solid #00BFFF; /* Outer border */
+    box-shadow: 0 0 0 5px #84DE02; /* Inner border */
+    border-radius: 5px; /* Optional */
+}
 
 
