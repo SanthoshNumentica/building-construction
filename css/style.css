@@ -941,26 +941,29 @@
 }
 /*** Contact End ***/
 
-/*** Footer Start ***/
+//*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), url(../img/footer-img.jpg);
+    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), 
+                url(../img/footer-img.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: #ddd; /* Light gray for better contrast */
     transition: 0.5s;
 }
 
 .footer .footer-item p {
-    line-height: 35px;
+    line-height: 30px;
+    color: #ccc; /* Softer white tone for readability */
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 1px;
-    color: var(--bs-secondary);
+    color: #00BFFF; /* Mild theme color on hover */
 }
 
 .footer .footer-item .footer-btn a,
@@ -968,13 +971,23 @@
     transition: 0.5s;
 }
 
+.footer .footer-item .footer-btn a {
+    background: #00BFFF; /* Mild blue theme for social buttons */
+    border: none;
+}
+
 .footer .footer-item .footer-btn a:hover {
-    background: var(--bs-white);
+    background: #84DE02; /* Green theme on hover */
+}
+
+.footer .footer-item .footer-btn a i {
+    color: #fff !important;
 }
 
 .footer .footer-item .footer-btn a:hover i {
-    color: var(--bs-primary) !important;
+    color: #001248 !important; /* Darker contrast on hover */
 }
+
 /*** Footer End ***/
 
 /*** copyright Start ***/
