@@ -269,7 +269,6 @@
     color: var(--bs-white);
 }
 /*** Single Page Hero Header End ***/
-
 /*** Carousel Start ***/
 .carousel .carousel-inner .carousel-item {
     position: relative;
@@ -278,7 +277,7 @@
 }
 
 .carousel .carousel-inner .carousel-item img {
-    animation-name: image-zoom ;
+    animation-name: image-zoom;
     animation-duration: 10s;
     animation-delay: 1s;
     animation-direction: alternate;
@@ -353,19 +352,17 @@
     z-index: 5;
 }
 
-.carousel .carousel-indicators li,
-.carousel .carousel-indicators li,
 .carousel .carousel-indicators li {
     margin-right: 30px !important;
     width: 10px;
     height: 10px;
-    border: 6px solid var(--bs-secondary);
-    background: var(--bs-white);
+    border: 6px solid #84DE02; /* Updated to theme color */
+    background: #00BFFF; /* Updated to theme color */
     transition: 0.5s;
 }
 
 .carousel .carousel-indicators li.active {
-    border: 10px solid var(--bs-primary);
+    border: 10px solid #00BFFF; /* Updated to theme color */
 }
 
 .carousel .carousel-control-prev,
@@ -377,22 +374,20 @@
     position: absolute;
     left: 0;
     padding: 25px 30px;
-    background: var(--bs-primary);
-
+    background: #84DE02; /* Updated to theme color */
 }
 
 .carousel .carousel-control-next .carousel-control-next-icon {
     position: absolute;
     right: 0;
     padding: 25px 30px;
-    background: var(--bs-primary);
-
+    background: #84DE02; /* Updated to theme color */
 }
 
 .carousel .carousel-control-prev .carousel-control-prev-icon:hover,
 .carousel .carousel-control-next .carousel-control-next-icon:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-white);
+    background: #00BFFF; /* Updated to theme color */
+    color: #ffffff;
 }
 /*** Carousel End ***/
 
@@ -604,19 +599,19 @@
 
 /*** Fact Counter ***/
 .counter {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 22, 89, 1)), url(../img/counter.jpg);
+    background: linear-gradient(rgba(132, 222, 2, 0.9), rgba(0, 191, 255, 1)), url(../img/counter.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .counter .counter-btn:hover {
-    background: var(--bs-white);
-    color: var(--bs-secondary);
+    background: #00BFFF;
+    color: #000000;
 }
 
 .counter .counter-box {
-    padding-right: 20px; 
+    padding-right: 20px;
     padding-bottom: 20px;
 }
 
@@ -634,7 +629,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: var(--bs-secondary);
+    background: #00BFFF;
     z-index: 2;
 }
 
@@ -644,9 +639,15 @@
     left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    background: var(--bs-white);
-    box-shadow: 20px 20px rgba(255, 94, 21, 1);
+    background: #ffffff;
+    box-shadow: 20px 20px rgba(132, 222, 2, 1);
     z-index: 3;
+    color: #000000; /* Black text */
+}
+
+.counter .counter-item h4,
+.counter .counter-item .counter-counting {
+    color: #000000; /* Black text */
 }
 
 .counter .counter-item .counter-counting {
@@ -656,10 +657,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bs-primary);
+    background: #84DE02;
     font-size: 30px;
 }
 /*** Fact Counter ***/
+
 
 /*** Projects Start ***/
 .project .project-item .project-img {
