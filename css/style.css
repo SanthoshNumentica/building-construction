@@ -92,8 +92,12 @@
 
 /*** Navbar ***/
 .sticky-top {
-    transition: 1s;
+    transition: 1s;fadeInRight
 }
+.navbar .container {
+    justify-content: flex-start !important;
+}
+
 
 .navbar .navbar-nav .nav-item.nav-link,
 .navbar .navbar-nav .nav-link {
@@ -164,7 +168,7 @@
 }
 
 .navbar .navbar-toggler {
-    padding: 8px 15px;
+    padding: 8px 10px;
     color: var(--bs-dark);
     background: var(--bs-secondary);
 }
