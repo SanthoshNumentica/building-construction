@@ -469,7 +469,7 @@
     transition: 0.5s;
 }
 .feature .feature-item:hover {
-    background: #84DE02; /* Corrected color format */
+    background: #d5f3b731;
     border: 1px solid transparent;
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
 }
