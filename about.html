@@ -24,6 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
 
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -140,7 +141,8 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
-                    <img src="img/automation-main-1.jpg" class="img-fluid w-100" alt="Building Automation in Electric">
+                    <img src="img/automation-main-1.jpg" class="img-fluid w-100 animate__animated animate__fadeInLeft" alt="Building Automation in Electric">
+<img src="img/automation-main-2.jpeg" class="img-fluid w-100 animate__animated animate__fadeInRight" alt="Building Automation in Electric">
                 </div>
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.1s">
                     <div class="about-item-content">
@@ -406,6 +408,22 @@
         </div>
     </div>
     <!-- Back to Top -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-fluid");
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate__animated", "animate__zoomIn");
+                    }
+                });
+            }, { threshold: 0.5 });
+        
+            images.forEach(img => observer.observe(img));
+        });
+        </script>
+        
 
 
     <!-- JavaScript Libraries -->
