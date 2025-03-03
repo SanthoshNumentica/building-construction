@@ -24,8 +24,6 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -41,18 +39,6 @@
             class="whatsapp-icon">
     </a>
 
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-
-
-    <!-- Navbar & Hero Start -->
     <div class="container-fluid sticky-top px-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-light  px-4">
             <a href="index.html" class="navbar-brand p-0">
@@ -69,7 +55,7 @@
                         <a href="service.html" class="nav-item nav-link">Services</a>
         
                         <!-- Projects Dropdown -->
-                        <div class="nav-item dropdown">
+                        <div class="nav-item dropdown active">
                             <a href="project.html" class="nav-link dropdown-toggle" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Projects
                             </a>
@@ -81,7 +67,7 @@
                         </div>
                         <a href="marketing&consulting.html" class="nav-item nav-link">Marketing & Consulting</a>
                         <a href="events.html" class="nav-item nav-link">Events</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
@@ -89,143 +75,170 @@
     </div>
     <!-- Navbar & Hero End -->
 
-
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
         <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Projects</h4>
             <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-secondary">Contact</li>
+                <li class="breadcrumb-item active text-secondary">Future Projects</li>
             </ol>
         </div>
     </div>
     <!-- Header End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid contact bg-light py-5">
+    <!-- Projects Start -->
+    <div class="container-fluid project py-5">
         <div class="container py-5">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                        <p class="text-uppercase text-secondary fs-5 mb-0"><b>Let’s Connect</b></p>
-                        <h2 class="display-4 text-capitalize mb-3" style="color: #00BFFF;">Send Your Message</h2>
-                        <p class="mb-0">The contact form is currently inactive. Get a functional and working contact
-                            form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and
-                            you're done. <a class="text-primary fw-bold"></a>.
-                        </p>
-                    </div>
-                    <style>
-                        .custom-border {
-                            border: 2px solid #84DE02 !important;
-                        }
-                    </style>
-
-                    <form id="emailForm">
-                        <div class="row g-3">
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating custom-border">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating custom-border">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating custom-border">
-                                    <input type="phone" class="form-control" id="phone" placeholder="Phone">
-                                    <label for="phone">Your Phone</label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6">
-                                <div class="form-floating custom-border">
-                                    <input type="text" class="form-control" id="project" placeholder="Project">
-                                    <label for="project">Your Project</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating custom-border">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating custom-border">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 160px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <style>
-                                .custom-btn {
-                                    background: linear-gradient(to right, #84DE02, #00BFFF);
-                                    border: none;
-                                    color: white;
-                                    /* Ensures text is visible */
-                                    font-weight: bold;
-                                    transition: 0.3s ease-in-out;
-                                }
-
-                                .custom-btn:hover {
-                                    background: linear-gradient(to right, #00BFFF, #84DE02);
-                                }
-                            </style>
-                            <div class="col-12">
-                                <button class="btn custom-btn w-100 py-3">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="contact-map h-100 w-100">
-                        <iframe class="h-100 w-100" style="height: 500px;"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.538256163286!2d103.79258027477778!3d1.4514047985349336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1313a8139d23%3A0x8c91f351ebc62770!2sWoodlands%20Industrial%20Park%20E5%2C%20Singapore!5e0!3m2!1sen!2sin!4v1740593092616!5m2!1sen!2sin"
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <p class="text-uppercase text-secondary fs-5 mb-0">Our Projects</p>
+                <h2 class="display-4 text-capitalize mb-3">Future Projects</h2>
             </div>
             <div class="row g-5">
-                <div class="col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="d-inline-flex bg-white w-100 custom-border p-4">
-                        <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p class="mb-0">280 Woodlands Industrial Park, Harvest@woodlands, # 10-52, Singapore -
-                                757322</p>
+                <div class="row">
+                    <!-- UOB Micro BMS Project -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div id="projectCarousel1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class=" active">
+                                                <img src="img/project/uob-1.jpg" class="carousel-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-content mb-4">
+                                        <p class="fs-5 text-secondary mb-2">UOB Micro BMS Project</p>
+                                        <a href="#" class="h4">UOB Micro BMS</a>
+                                        <p class="mb-0 mt-3">
+                                            Zealcorps successfully completed the UOB Micro BMS project, enhancing building
+                                            management and energy efficiency.
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-primary py-2 px-4" href="img/pdf/uob/uob.pdf" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Thomson CC -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div id="projectCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class=" active">
+                                                <img src="img/project/thomson-1.jpg" class="carousel-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-content mb-4">
+                                        <p class="fs-5 text-secondary mb-2">Thomson CC</p>
+                                        <a href="#" class="h4">Thomson Community Centre</a>
+                                        <p class="mb-0 mt-3">
+                                            The Thomson CC project involved infrastructure upgrades for enhanced community services.
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-primary py-2 px-4" href="img/pdf/thomson/thomson.pdf" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Mount Elizabeth Hospital -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div id="projectCarousel3" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class=" active">
+                                                <img src="img/project/meh-1.jpg" class="carousel-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-content mb-4">
+                                        <p class="fs-5 text-secondary mb-2">Mount Elizabeth Hospital</p>
+                                        <a href="#" class="h4">Mount E Hospital</a>
+                                        <p class="mb-0 mt-3">
+                                            Zealcorps successfully completed multiple projects at Mount Elizabeth Hospital,
+                                            improving patient care and operational efficiency.
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-primary py-2 px-4" href="img/pdf/meh/meh.pdf" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Sentosa Villa BMS -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div id="projectCarousel4" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class=" active">
+                                                <img src="img/project/sentosa-1.jpg" class="carousel-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-content mb-4">
+                                        <p class="fs-5 text-secondary mb-2">Sentosa Villa BMS</p>
+                                        <a href="#" class="h4">Sentosa Villa</a>
+                                        <p class="mb-0 mt-3">
+                                            Implementation of a smart Building Management System (BMS) for efficient energy control.
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-primary py-2 px-4" href="img/pdf/sentosa/sentosa.pdf" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Upper Serangoon Polyclinic -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div id="projectCarousel5" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class=" active">
+                                                <img src="img/project/serangoon-1.jpg" class="carousel-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="project-content mb-4">
+                                        <p class="fs-5 text-secondary mb-2">Upper Serangoon Polyclinic</p>
+                                        <a href="#" class="h4">Upper Serangoon Polyclinic</a>
+                                        <p class="mb-0 mt-3">
+                                            A healthcare facility upgrade focused on modernizing medical equipment and services.
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-primary py-2 px-4" href="img/pdf/serangoon/serangoon.pdf" target="_blank">Read More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="d-inline-flex bg-white w-100 custom-border p-4">
-                        <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
-                        <div>
-                            <h4>Mail Us</h4>
-                            <p class="mb-0">info@zealcorps.com</p>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="d-inline-flex bg-white w-100 custom-border p-4">
-                        <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
-                        <div>
-                            <h4>Telephone</h4>
-                            <p class="mb-0">(+65 6334 1556)</p>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+    <!-- Projects End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -293,14 +306,19 @@
             </div>
         </div>
     </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span
+                        class="text-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;
                         <a href="#" class="border-bottom text-white">
-                            <i class="fas fa-copyright text-light me-2"></i> Zealcorps.pvt.ltd
+                            <i class="fas fa-copyright text-light me-2"></i>Zealcorps.pvt.ltd
                         </a>, All rights reserved. <span id="currentYear"></span>
                     </span>
 
@@ -321,7 +339,6 @@
 
 
     <!-- JavaScript Libraries -->
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>

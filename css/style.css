@@ -182,9 +182,32 @@
     transform: rotateX(0deg);
     visibility: visible;
     background: var(--bs-light);
+    font-family: "Playfair Display", serif;
     transition: .5s;
     opacity: 1;
 }
+.feature {
+    background-color: #f5f4f3; /* Light gray background */
+}
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #00BFFF, #007BFF); /* Gradient Effect */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(45deg, #007BFF, #00BFFF);
+    transform: scale(1.05);
+}
+
+
 
 .navbar .nav-item .dropdown-menu {
     background: var(--bs-light);

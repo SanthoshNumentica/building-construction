@@ -3,11 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>🏠 Zealcorps</title>
+    <title>🏠Zealcorps</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,11 +60,24 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="project.html" class="nav-item nav-link">Projects</a>
+    
+                    <!-- Projects Dropdown -->
+                    <div class="nav-item dropdown">
+                        <a href="project.html" class="nav-link dropdown-toggle" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="projectDropdown">
+                            <li><a class="dropdown-item" href="project.html">Recent Projects</a></li>
+                            <li><a class="dropdown-item" href="ongoing-projects.html">Ongoing Projects</a></li>
+                            <li><a class="dropdown-item" href="future-projects.html">Future Projects</a></li>
+                        </ul>
+                    </div>
+                    <a href="marketing&consulting.html" class="nav-item nav-link">Marketing & Consulting</a>
                     <a href="events.html" class="nav-item nav-link">Events</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
+        </div>
         </nav>
     </div>
     <!-- Navbar & Hero End -->
