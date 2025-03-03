@@ -91,12 +91,12 @@
 /*** Topbar End ***/
 
 /*** Navbar ***/
-.sticky-top {
-    transition: 1s;fadeInRight
+/* .sticky-top { */
+    /* transition: 1s;fadeInRight
 }
 .navbar .container {
     justify-content: flex-start !important;
-}
+} */
 
 
 .navbar .navbar-nav .nav-item.nav-link,
