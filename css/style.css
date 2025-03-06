@@ -976,27 +976,28 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), 
+    background: linear-gradient(rgba(0, 191, 255, 0.9), rgba(0, 191, 255, 1)), 
                 url(../img/footer-img.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .footer .footer-item a {
     line-height: 35px;
-    color: #ddd; /* Light gray for better contrast */
+    color: #0a0000; /* Light gray for better contrast */
     transition: 0.5s;
 }
 
 .footer .footer-item p {
     line-height: 30px;
-    color: #ccc; /* Softer white tone for readability */
+    color: #0b0101; /* Softer white tone for readability */
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 1px;
-    color: #00BFFF; /* Mild theme color on hover */
+    color: #eef1f2; /* Mild theme color on hover */
 }
 
 .footer .footer-item .footer-btn a,
@@ -1014,7 +1015,7 @@
 }
 
 .footer .footer-item .footer-btn a i {
-    color: #fff !important;
+    color: #0b0000 !important;
 }
 
 .footer .footer-item .footer-btn a:hover i {
@@ -1025,9 +1026,10 @@
 
 /*** copyright Start ***/
 .copyright {
-    border-top: 1px solid rgba(73, 162, 97, 0.08);
-    background: var(--bs-dark);
+    border-top: 1px solid rgba(0, 191, 255, 0.08);
+    background: #00BFFF;
 }
+
 /*** copyright end ***/
 
 .btn-custom {
@@ -1071,6 +1073,10 @@
     cursor: pointer;
     transition: background 0.4s ease-in-out;
 }
+.text-black {
+    color: black !important;
+}
+
 
 .newsletter-btn:hover {
     background: linear-gradient(135deg, #00BFFF 30%, #84DE02 100%);
@@ -1213,6 +1219,20 @@
         .bantea:hover {
             background-color: #84DE02 !important;
             color: white !important;
+        }
+        .hkjkj {
+            color: black !important; /* Ensures text inside this div is black */
+        }
+        
+        .hkjkj button {
+            background-color: #84DE02 !important; /* Button color */
+            border-color: #84DE02 !important; /* Ensures border matches button color */
+            color: black !important; /* Button text color */
+        }
+        
+        .hkjkj button:hover {
+            background-color: #6AB702 !important; /* Slightly darker green for hover effect */
+            border-color: #6AB702 !important;
         }
         
         
