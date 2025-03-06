@@ -24,6 +24,10 @@
     { "source": "/logodesign", "destination": "/logodesign.html" },
     { "source": "/webhosting", "destination": "/webhosting.html" },
     { "source": "/events", "destination": "/events.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/meh_details", "destination": "/meh_details.html" },
+    { "source": "/thomson", "destination": "/thomson.html" },
+    { "source": "/sentosa", "destination": "/sentosa.html" },
+    { "source": "/police_guard", "destination": "/police_guard.html" }
   ]
 }
