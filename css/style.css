@@ -1203,5 +1203,16 @@
                 opacity: 0;
             }
         }
+        .bantea {
+            background-color:#00BFFF; /* Default button color */
+            color: white; /* Text color */
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .bantea:hover {
+            background-color: #84DE02 !important;
+            color: white !important;
+        }
         
         
