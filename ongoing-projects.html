@@ -49,7 +49,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto pt-2 pt-lg-0">
-                    <a href="/index" class="nav-item nav-link active">
+                    <a href="/index" class="nav-item nav-link ">
                         <i class="fa fa-home"></i> Home
                     </a>
                     <a href="/about" class="nav-item nav-link">
@@ -95,12 +95,12 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <!-- Projects Dropdown -->
-                    <div class="nav-item dropdown">
+                    <div class="nav-item dropdown active">
                         <a href="/project" class="nav-link dropdown-toggle" id="projectDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa fa-folder-open"></i> Projects
+                            <i class="fa fa-folder-open "></i> Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="projectDropdown">
                             <li><a class="dropdown-item" href="/project">
@@ -117,10 +117,10 @@
                             </li>
                         </ul>
                     </div>
-                    
 
 
-                    
+
+
                     <a href="/contact" class="nav-item nav-link">
                         <i class="fa fa-envelope"></i> Contact
                     </a>
@@ -128,9 +128,9 @@
             </div>
         </nav>
     </div>
-    
+
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </nav>
     </div>
     <!-- Navbar & Hero End -->
@@ -193,6 +193,44 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="project-item">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class=" active">
+                                        <img src="img/project/meh-3.jpg" class="carousel-img" alt=""
+                                            style="height: 10;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/project/meh-1.jpg" class="carousel-img" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/project/meh-1.jpg" class="carousel-img" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/project/meh-1.jpg" class="carousel-img" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="project-content mb-4">
+                                <p class="fs-5 text-secondary mb-2">Sentosa Site Project</p>
+                                <a href="#" class="h4">EcoStruxure Building Operation </a>
+                                <p class="mb-0 mt-3">
+                                    We specialize in the <b>supply, installation, and optimization of EcoStruxure
+                                    Building</b>
+                                    Operation (EBO) SCADA systems to enhance <b>building automation and energy
+                                    efficiency</b>
+                                </p>
+                            </div>
+                            <a class="btn btn-primary bantea py-2 px-4" href="/sentosa">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Projects End -->
@@ -208,11 +246,11 @@
                         at affordable service costs, with competitive client-friendly pricing options. To lead
                         with efficiency and embrace
                         innovation to provide top notch services.</p>
-                        <div class="hkjkj">
-                            <button type="button" class="btn py-2 mt-2" onclick="window.location.href='/contact';">
-                                Contact Us
-                            </button>
-                        </div>                                
+                    <div class="hkjkj">
+                        <button type="button" class="btn py-2 mt-2" onclick="window.location.href='/contact';">
+                            Contact Us
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
@@ -241,10 +279,11 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4">Contact Info</h4>
-                    <a href=""><i class="fa fa-map-marker-alt me-2"></i>421 Tagore Industrial Avenue, Tagore 8 #03-24, Singapore 787805.</a>
+                    <a href=""><i class="fa fa-map-marker-alt me-2"></i>421 Tagore Industrial Avenue, Tagore 8 #03-24,
+                        Singapore 787805.</a>
                     <a href=""><i class="fas fa-envelope me-2"></i> info@zealcorps.com</a>
                     <a href=""><i class="fas fa-phone me-2"></i> +65 6334 1556</a>
-                    
+
                     <div class="footer-btn d-flex align-items-center">
                         <a class="btn btn-secondary btn-md-square me-2" href=""><i
                                 class="fab fa-facebook-f text-white"></i></a>
@@ -260,13 +299,13 @@
             <div class="text-center text-white mt-4">
                 &copy; <span id="currentYear"></span> Zealcorps. All Rights Reserved.
             </div>
-            
+
             <script>
                 document.getElementById("currentYear").textContent = new Date().getFullYear();
             </script>
-            
+
         </div>
-</div>
+    </div>
     <!-- Copyright End -->
 
 
